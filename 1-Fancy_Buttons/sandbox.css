@@ -1,0 +1,527 @@
+button {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 15px 0 0;
+}
+
+.facebook-style-btn {
+  border-radius: 2px;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+.facebook-style-dark{
+  -moz-box-shadow:    inset 0 2px 0 0 #4d73bf;
+  -webkit-box-shadow: inset 0 2px 0 0 #4d73bf;
+  box-shadow:         inset 0 2px 0 0 #4d73bf;
+  background: #4267b2;
+  border: solid 1px #4267b2;
+  color:white;
+  text-shadow: 0 1px 0 #3359a5;
+}
+
+  .facebook-style-dark:hover{
+    background: #2b54a7;
+  }
+  .facebook-style-dark:active{
+    background: #1d4698;
+    border-color: #1d4698;
+  }
+
+.facebook-style-light{
+  background:#f6f7f9;
+  border:solid 1px #ced0d4;
+  color: #4b4f56;
+}
+  .facebook-style-light:hover{
+    background:#e9ebee;
+
+  }
+  .facebook-style-light:active{
+    background:#d8dade;
+    border-color:#d8dade;
+  }
+
+/*
+  Botones 3d
+*/
+
+.btn-3d-1{
+  position:relative;
+  background:orangered;
+  border:none;
+  color:white;
+  padding:15px 24px;
+  font-size:1.4rem;
+  box-shadow:-6px 6px 0 hsl(16,100%,30%);
+  outline:none;
+}
+
+  .btn-3d-1:active{
+    /*background: hsl(16,100%,40%);*/
+    top:3px;
+    left:-3px;
+    box-shadow: -3px 3px 0 hsl(16,100%,30%); */
+  }
+  .btn-3d-1:hover{
+    background: hsl(16,100%,45%);
+  }
+  .btn-3d-1::before{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+
+    border: solid 6px transparent;
+    border-right: solid 6px hsl(16,100%,30%);
+    border-left-width: 0px;
+    background: none;
+    top: 0px;
+    left: -6px;
+}
+
+  .btn-3d-1::after{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid 6px transparent;
+    border-top: solid 6px hsl(16,100%,30%);
+    border-bottom-width:0;
+
+    right:0;
+    bottom:-6px;
+  }
+
+    .btn-3d-1:active::before{
+      border: solid 3px transparent;
+      border-right: solid 3px hsl(16,100%,30%);
+    }
+    .btn-3d-1:active::after{
+      border: solid 3px transparent;
+      border-top: solid 3px hsl(16,100%,30%);
+    }
+
+
+
+.btn-3d-2{
+  position:relative;
+  background: -#ecd300;
+  background: -webkit-radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+  background: -o-radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+  background: -moz-radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+  background: radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+
+  font-size:1.4rem;
+  text-shadow:0 -1px 0 #c3af07;
+  color:white;
+
+  border:solid 1px hsl(54,100%,30%);
+  border-radius:100%;
+  height:100px;
+  width:100px;
+
+  z-index:4;
+
+  outline:none;
+
+  box-shadow: inset 0 1px  0 hsl(54, 100%, 50%),
+                    0 3px  0 hsl(54, 100%, 20%),
+                    0 6px  0 hsl(54, 100%, 15%),
+                    0 9px  0 hsl(54, 100%, 10%),
+                    0 12px 0 hsl(54, 100%, 5%),
+                    0 15px 0 hsl(54, 100%, 2%);
+}
+
+.btn-3d-2:hover{
+  background: -webkit-radial-gradient(hsl(54,100%,45%),hsl(54,100%,35%));
+  background: -o-radial-gradient(hsl(54,100%,45%),hsl(54,100%,35%));
+  background: -moz-radial-gradient(hsl(54,100%,45%),hsl(54,100%,35%));
+  background: radial-gradient(hsl(54,100%,45%),hsl(54,100%,35%));
+}
+
+.btn-3d-2:active{
+  background: -webkit-radial-gradient(hsl(54,100%,43%),hsl(54,100%,33%));
+  background: -o-radial-gradient(hsl(54,100%,43%),hsl(54,100%,33%));
+  background: -moz-radial-gradient(hsl(54,100%,43%),hsl(54,100%,33%));
+  background: radial-gradient(hsl(54,100%,43%),hsl(54,100%,33%));
+
+  top:3px;
+
+  box-shadow: inset 0 1px  0 hsl(54, 100%, 50%),
+                    0 3px  0 hsl(54, 100%, 20%),
+                    0 6px  0 hsl(54, 100%, 15%),
+                    0 9px  0 hsl(54, 100%, 10%),
+                    0 12px 0 hsl(54, 100%, 5%);
+}
+
+/* =====================
+    Gradient Buttons
+===================== */
+.gradient-button-1{
+  position:relative;
+  z-index:1;
+  display:inline-block;
+  padding:20px 40px;
+  font-size:1.4rem;
+  box-sizing:border-box;
+  background-color:#e7eef1;
+  border: solid 10px transparent;
+  border-image:linear-gradient(to top right , orangered , yellow);
+  border-image-slice:1;
+  transition:all 0.5s ease-in-out;
+
+}
+.gradient-button-1:hover{
+  /*background-image no es animable*/
+  background-image:linear-gradient(to top right , orangered , yellow);
+  color:white;
+}
+
+.gradient-button-2{
+  position:relative;
+  z-index:1;
+  display:inline-block;
+  padding:20px 40px;
+  font-size:1.4rem;
+  box-sizing:border-box;
+  background-color:#e7eef1;
+  border: solid 10px transparent;
+  border-image:linear-gradient(to  right , orangered , transparent);
+  border-image-slice:1;
+  transition:all 0.5s ease-in-out;
+}
+
+.gradient-button-2:hover{
+  /*background-image no es animable*/
+  background-image:linear-gradient(to  right , orangered , transparent);
+  border-right-style:none;
+}
+
+/* =====================
+    Animated Buttons
+===================== */
+.animated-button-1{
+  padding: 20px 40px;
+  font-size:1.4rem;
+  background-image: url(https://www.transparenttextures.com/patterns/black-mamba.png);
+  background-color:#00b3b4;
+  background-size:250px 250px;
+  color:white;
+  transition:all ease 0.3;
+
+}
+.animated-button-1:hover{
+  animation: loading-button-animation 2s linear infinite;
+}
+
+
+@keyframes loading-button-animation{
+  from{
+    background-position: 0 0;
+  }
+  to{
+    background-position: 40px 0;
+  }
+}
+
+.animated-button-2{
+  padding: 20px 40px;
+  font-size:1.4rem;
+  background-color:#00b3b4;
+  background-size:250px 250px;
+  color:white;
+  transition:all ease 0.3;
+
+}
+.animated-button-2::after{
+  position:absolute;
+  top: 30%;
+  right: 0.6em;
+  content:'>';
+  opacity:0;
+}
+
+.animated-button-2:hover{
+  padding:20px 60px 20px 20px;
+  transition:all ease 0.3s;
+
+
+}
+.animated-button-2:hover::after{
+  opacity:1;
+  transition:all ease 0.3;
+}
+
+/* ==========================
+  Toggle Switch UI Buttons
+========================== */
+
+.toggle-1{
+  font-family: sans-serif ;
+  display:inline-block;
+  vertical-align:top;
+  margin: 0 15px 0 0;
+}
+  .toggle-1__input{
+    display:none;
+  }
+
+  .toggle-1__button{
+    position:relative;
+    display:inline-block;
+    font-size:1rem;
+    line-height:20px;
+    text-transform:uppercase;
+    background-color:#f2395a;
+    border: solid 1px #f2395a;
+    color:white;
+    width:80px;
+    height:30px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+  }
+
+  .toggle-1__button::before{
+    position:absolute;
+    content:'off';
+    display:inline-block;
+    background:white;
+    color:#f2359a;
+    padding:0px 3px;
+    height:20px;
+    top:5px;
+    left:36px;
+    transition:all 0.3s ease;
+  }
+
+  .toggle-1__input:checked + .toggle-1__button {
+    background:#00b3b4;
+    border: solid 1px #00b3b4;
+  }
+
+  .toggle-1__input:checked + .toggle-1__button::before {
+    color:#00b3b4;
+    content:'on';
+    left:5px;
+  }
+
+.toggle-2__button{
+  position:relative;
+  display:inline-block;
+  line-height:20px;
+  text-transform:uppercase;
+  background:white;
+  color:#aaa;
+  border:solid 1px #ccc;
+  padding: 5px 10px 5px 30px;
+  transition:all 0.3s ease;
+  cursor:pointer;
+}
+
+.toggle-2__input{
+  display:none;
+}
+
+.toggle-2__button::before{
+  position:absolute;
+  display:inline-block;
+  left:10px;
+  top:10px;
+  content:"";
+  width:10px;
+  height:10px;
+  background:#ccc;
+  transition:all 0.3s ease;
+  border-radius:100%;
+}
+
+.toggle-2__input:checked + .toggle-2__button{
+  background:#00b3b4;
+  border-color:#00b3b4;
+  color:white;
+}
+.toggle-2__input:checked + .toggle-2__button::before{
+  background:#42f448;
+  border-color:#42f448;
+}
+
+
+/* ==========================
+    ACÁ EL TEMA DEL CURSO
+========================== */
+section {
+  position: relative;
+  border-top: solid 1px #f9f9f9;
+  border-bottom: solid 1px #ddd;
+  padding: 10px 0;
+}
+
+button{
+  margin-bottom:15px;
+}
+
+.sandbox{
+  position: relative;
+  background: #e7eef1;
+  width: 60%;
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 40px 40px 60px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 12px 0 -6px #fa90a3;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+h1 {
+  width: 60%;
+  max-width: 960px;
+  margin: 0 auto 60px;
+  transform: rotate(-3deg);
+  color: white;
+  text-align: left;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-shadow:  0 1px 0 hsl(52,7%,20%),
+    0 2px 0 hsl(52,7%,18%),
+    0 3px 0 hsl(52,7%,16%),
+    0 4px 0 hsl(52,7%,14%),
+    0 5px 0 hsl(52,7%,12%),
+    0 6px 0 hsl(52,7%,10%),
+    0 7px 0 hsl(52,7%,8%),
+    0 8px 0 hsl(52,7%,6%),
+
+    0 0 5px rgba(0,0,0,.05),
+    0 1px 3px rgba(0,0,0,.2),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.2),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.3);
+}
+
+h1 small {
+  font-size: 3rem;
+  display: block;
+  color: #fa90a3;
+  text-shadow: none;
+}
+
+
+h2 {
+  color: white;
+}
+
+h2 small {
+  font-weight: normal;
+  font-size: 1rem;
+  display: block;
+  color: #323b40;
+}
+
+h3 small {
+  font-weight: normal;
+  font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888;
+  display: block;
+}
+
+h4 {
+  margin: 0.5rem 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* DARK PINK */
+  background: #f2395a;
+
+  /*TEAL*/
+  /*background: #00B3B4;*/
+
+  font-size: 20px;
+  line-height: 28px;
+  color: #323b40;
+  margin: 40px 0;
+}
+
+sandbox,
+.final-result,
+.info {
+  position: relative;
+  background: #e7eef1;
+  width: 60%;
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 40px 40px 60px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 12px 0 -6px #fa90a3;
+}
+
+  .sandbox::before,
+  .final-result::before,
+  .info::before {
+    position: absolute;
+    display: block;
+    content: "";
+    border: solid 6px transparent;
+    border-right: solid 6px #fa90a3;
+    border-top-width: 0px;
+    background: none;
+    bottom: -6px;
+    left: -6px;
+  }
+
+  .sandbox::after,
+  .final-result::after,
+  .info::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border: solid 6px transparent;
+    border-top: solid 6px #fa90a3;
+    border-bottom-width: 0px;
+    background: none;
+    right: 0;
+    bottom: -6px;
+  }
+
+
+  .sandbox h2,
+  .final-result h2,
+  .info h2 {
+    font-size: 1.4rem;
+    display: inline-block;
+    transform: rotate(-90deg);
+    transition: all ease-in-out .1s;
+    position: absolute;
+    top: 60px;
+    left: -85px;
+    background: #e12345;
+    margin: 0;
+    line-height: 1.6rem;
+    padding: 15px;
+    z-index: -2;
+    border-radius: 4px;
+    min-width: 130px;
+  }
+
+  .sandbox:hover h2,
+  .final-result:hover h2,
+  .info:hover h2 {
+    left: -110px;
+  }
+
+  .sandbox .button-theme,
+  .final-result .button-theme {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }

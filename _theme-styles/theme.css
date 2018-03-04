@@ -1,0 +1,372 @@
+/* ============================================
+ESTILO DE LA PÁGINA
+=============================================*/
+@media print{
+  /* Cosas del background */
+  body{
+    background:#fff;
+    color: #bbb;
+  }
+
+  body::before{
+    background:none;
+  }
+
+  .final-result, .info{
+    background:none;
+    color:#222;
+    width:100%;
+    padding: 0;
+    margin:0;
+    border:none;
+    box-shadow: none;
+    margin: 10px auto;
+  }
+
+  section, section:first-child::before {
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+
+  h1, h1 small{
+    color:#222;
+    line-height: 1.4rem;
+    transform: rotate(0deg);
+    text-shadow: none;
+    text-align: center;
+    margin: 0 0 10px;
+    width: 100%
+  }
+
+
+
+  .final-result h3, .info h3{
+    color:black;
+    margin: 0;
+  }
+  .info p, .final-result h3{
+    color:#222;
+    margin:0;
+  }
+
+  .logo,
+  .made-by,
+  .copyright,
+  .course,
+  .final-result h2,
+  .info h2,
+  .final-result::before,
+  .final-result::after,
+  .info::after,
+  .info::before{
+    display:none;
+  }
+
+  a::after{
+    content: " [" attr(href) "]";
+  }
+
+  footer a:link,
+  footer a:visited{
+    color: #000;
+    background:none;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+  h1 small{
+    font-size: 20px;
+  }
+
+}
+
+
+/* ==========================
+ACÁ EL TEMA DEL CURSO
+========================== */
+section {
+  position: relative;
+  border-top: solid 1px #f9f9f9;
+  border-bottom: solid 1px #ddd;
+  padding: 10px 0;
+}
+
+button{
+  margin-bottom:15px;
+}
+
+.sandbox{
+  position: relative;
+  background: #e7eef1;
+  width: 60%;
+  max-width: 960px;
+  min-width: 540px;
+  margin: 60px auto;
+  padding: 40px 40px 60px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 12px 0 -6px #0ff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+h1 {
+  width: 60%;
+  max-width: 960px;
+  margin: 0 auto 60px;
+  transform: rotate(-3deg);
+  color: white;
+  text-align: left;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-shadow:  0 1px 0 hsl(52,7%,20%),
+    0 2px 0 hsl(52,7%,18%),
+    0 3px 0 hsl(52,7%,16%),
+    0 4px 0 hsl(52,7%,14%),
+    0 5px 0 hsl(52,7%,12%),
+    0 6px 0 hsl(52,7%,10%),
+    0 7px 0 hsl(52,7%,8%),
+    0 8px 0 hsl(52,7%,6%),
+
+    0 0 5px rgba(0,0,0,.05),
+    0 1px 3px rgba(0,0,0,.2),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.2),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.3);
+}
+
+h1 small {
+  font-size: 2.5rem;
+  display: block;
+  color: #80ffff;
+  text-shadow: none;
+  line-height: 2rem;
+}
+
+
+h2 {
+  color: white;
+  font-size:0.7rem;
+}
+
+h2 small {
+  font-weight: normal;
+  font-size: 0.8rem;
+  display: block;
+  color: #323b40;
+}
+
+p{
+  margin-top:0px;
+}
+
+h3 small {
+  font-weight: normal;
+  font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888;
+  display: block;
+}
+
+h4 {
+  margin: 0.5rem 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* DARK PINK */
+  background: #f2395a;
+
+  /*TEAL*/
+  background: #00B3B4;
+
+  font-size: 20px;
+  line-height: 28px;
+  color: #323b40;
+  margin: 40px 0;
+}
+
+sandbox,
+.final-result,
+.info {
+  position: relative;
+  background: #e7eef1;
+  width: 60%;
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 40px 40px 60px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 12px 0 -6px #00ffff;
+}
+
+.sandbox::before,
+.final-result::before,
+.info::before {
+  position: absolute;
+  display: block;
+  content: "";
+  border: solid 6px transparent;
+  border-right: solid 6px #00ffff;
+  border-top-width: 0px;
+  background: none;
+  bottom: -6px;
+  left: -6px;
+}
+
+.sandbox::after,
+.final-result::after,
+.info::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border: solid 6px transparent;
+  border-top: solid 6px #00ffff;
+  border-bottom-width: 0px;
+  background: none;
+  right: 0;
+  bottom: -6px;
+}
+
+
+.sandbox h2,
+.final-result h2,
+.info h2 {
+  font-size: 1.4rem;
+  display: inline-block;
+  transform: rotate(-90deg);
+  transition: all ease-in-out .1s;
+  position: absolute;
+  top: 60px;
+  left: -90px;
+  background: #e12345;
+  margin: 0;
+  line-height: 1.6rem;
+  padding: 15px;
+  z-index: -2;
+  border-radius: 4px;
+  min-width: 130px;
+}
+
+.info h2{
+  left:-85px;
+}
+
+.sandbox:hover h2,
+.final-result:hover h2,
+.info:hover h2 {
+  left: -112px;
+}
+
+.sandbox .button-theme,
+.final-result .button-theme {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .made-by, footer .course, footer .copyright {
+  padding-left: 70px;
+  transition: all ease 1000ms;
+}
+
+footer:hover .made-by, footer:hover .course, footer:hover .copyright {
+  padding-left: 140px;
+}
+
+.sticky-footer-lesson footer {
+  position: relative;
+  background: #e7eef1;
+  padding: 40px 40px 60px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #333;
+}
+
+.sticky-footer-lesson footer a:link {
+  color: #e12345;
+}
+
+footer {
+  width: 60%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #f29baa;
+}
+
+footer a:link,
+footer a:visited {
+  position: relative;
+  display: inline-block;
+  background: rgba(255,255,255, 0.2);
+  padding: 0 5px;
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  background: rgba(255,255,255, 0.4);
+  box-shadow: -3px 3px 0 #00ffff;
+  transform: rotate(-1deg);
+}
+
+footer .made-by, footer .course, footer .copyright {
+  padding-left: 70px;
+  transition: all ease 1000ms;
+}
+
+footer #logo {
+  position: relative;
+  z-index: 9;
+  opacity: .4;
+  float: left;
+  margin-right: 15px;
+  padding: 0;
+  background: none;
+  flex-direction: row;
+  box-shadow: none;
+  transition: all ease 1000ms;
+}
+
+footer #logo img {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all ease 1000ms;
+  width:60px;
+}
+
+footer:hover #logo_bg-yellow {
+  width: 60px;
+  transform: translateX(-10px) translateY(10px) translateZ(-10px);
+}
+
+footer:hover #logo_bg-gray {
+  width: 60px;
+
+  transform: translateX(-20px) translateY(20px) translateZ(-20px);
+}
+
+footer:hover #logo {
+  opacity: 1;
+  width: 60px;
+
+  transform: perspective(400px) rotateX(40deg) rotateY(20deg) rotateZ(-25deg) translateX(0) translateY(0px) translateZ(0);
+}
+
+footer:hover .made-by, footer:hover .course, footer:hover .copyright {
+  padding-left: 90px;
+}
+
+.info{
+  background-color:#444;
+  color:#ddd;
+}
+
+.info h3{
+  color:#888;
+}
