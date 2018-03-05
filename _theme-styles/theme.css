@@ -68,17 +68,6 @@ ESTILO DE LA PÁGINA
 
 }
 
-section {
-  position: relative;
-  border-top: solid 1px #f9f9f9;
-  border-bottom: solid 1px #ddd;
-  padding: 10px 0;
-}
-
-button{
-  margin-bottom:15px;
-}
-
 .sandbox, .info{
   position: relative;
   width: 60%;
@@ -100,6 +89,17 @@ button{
     background-color:#444;
     color:#ddd;
   }
+
+section {
+  position: relative;
+  border-top: solid 1px #f9f9f9;
+  border-bottom: solid 1px #ddd;
+  padding: 10px 0;
+}
+
+button{
+  margin-bottom:15px;
+}
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Bubblegum Sans', cursive;
@@ -181,8 +181,6 @@ body {
   color: #323b40;
   margin: 40px 0;
 }
-
-
 
 .sandbox::before,
 .final-result::before,
