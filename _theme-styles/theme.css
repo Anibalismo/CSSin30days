@@ -12,17 +12,6 @@ ESTILO DE LA PÁGINA
     background:none;
   }
 
-  .final-result, .info{
-    background:none;
-    color:#222;
-    width:100%;
-    padding: 0;
-    margin:0;
-    border:none;
-    box-shadow: none;
-    margin: 10px auto;
-  }
-
   section, section:first-child::before {
     border-top: 0px;
     border-bottom: 0px;
@@ -37,8 +26,6 @@ ESTILO DE LA PÁGINA
     margin: 0 0 10px;
     width: 100%
   }
-
-
 
   .final-result h3, .info h3{
     color:black;
@@ -81,10 +68,6 @@ ESTILO DE LA PÁGINA
 
 }
 
-
-/* ==========================
-ACÁ EL TEMA DEL CURSO
-========================== */
 section {
   position: relative;
   border-top: solid 1px #f9f9f9;
@@ -96,9 +79,8 @@ button{
   margin-bottom:15px;
 }
 
-.sandbox{
+.sandbox, .info{
   position: relative;
-  background: #e7eef1;
   width: 60%;
   max-width: 960px;
   min-width: 540px;
@@ -108,6 +90,16 @@ button{
   border-radius: 2px;
   box-shadow: 0 12px 0 -6px #0ff;
 }
+
+.sandbox{
+  background-color: #e7eef1;
+  color:black;
+}
+
+.info{
+    background-color:#444;
+    color:#ddd;
+  }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Bubblegum Sans', cursive;
@@ -190,19 +182,7 @@ body {
   margin: 40px 0;
 }
 
-sandbox,
-.final-result,
-.info {
-  position: relative;
-  background: #e7eef1;
-  width: 60%;
-  max-width: 960px;
-  margin: 60px auto;
-  padding: 40px 40px 60px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  box-shadow: 0 12px 0 -6px #00ffff;
-}
+
 
 .sandbox::before,
 .final-result::before,
@@ -242,7 +222,7 @@ sandbox,
   transition: all ease-in-out .1s;
   position: absolute;
   top: 60px;
-  left: -90px;
+  left: -85px;
   background: #e12345;
   margin: 0;
   line-height: 1.6rem;
@@ -250,10 +230,6 @@ sandbox,
   z-index: -2;
   border-radius: 4px;
   min-width: 130px;
-}
-
-.info h2{
-  left:-85px;
 }
 
 .sandbox:hover h2,
@@ -360,11 +336,6 @@ footer:hover #logo {
 
 footer:hover .made-by, footer:hover .course, footer:hover .copyright {
   padding-left: 90px;
-}
-
-.info{
-  background-color:#444;
-  color:#ddd;
 }
 
 .info h3{
