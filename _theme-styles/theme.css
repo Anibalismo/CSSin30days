@@ -97,13 +97,6 @@ ESTILO DE LA PÁGINA
     color:#ddd;
   }
 
-section {
-  position: relative;
-  border-top: solid 1px #f9f9f9;
-  border-bottom: solid 1px #ddd;
-  padding: 10px 0;
-}
-
 button{
   margin-bottom:15px;
 }
