@@ -17,6 +17,13 @@ ESTILO DE LA PÁGINA
     border-bottom: 0px;
   }
 
+  section {
+    position: relative;
+    border-top: solid 1px #f9f9f9;
+    border-bottom: solid 1px #ddd;
+    padding: 25px 0;
+  }
+
   h1, h1 small{
     color:#222;
     line-height: 1.4rem;
@@ -164,8 +171,11 @@ h3 small {
 }
 
 h4 {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
+
+
+
 
 body {
   font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
