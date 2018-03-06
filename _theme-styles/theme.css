@@ -12,18 +12,6 @@ ESTILO DE LA PÁGINA
     background:none;
   }
 
-  section, section:first-child::before {
-    border-top: 0px;
-    border-bottom: 0px;
-  }
-
-  section {
-    position: relative;
-    border-top: solid 1px #f9f9f9;
-    border-bottom: solid 1px #ddd;
-    padding: 25px 0;
-  }
-
   h1, h1 small{
     color:#222;
     line-height: 1.4rem;
@@ -73,6 +61,24 @@ ESTILO DE LA PÁGINA
     font-size: 20px;
   }
 
+  section, section:first-child::before {
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+
+  section {
+    position: relative;
+    border-top: solid 1px #f9f9f9;
+    border-bottom: solid 1px #ddd;
+    padding: 25px 0;
+  }
+}
+
+section {
+  position: relative;
+  border-top: solid 1px #f9f9f9;
+  border-bottom: solid 1px #ddd;
+  padding: 25px 0;
 }
 
 .sandbox, .info{
