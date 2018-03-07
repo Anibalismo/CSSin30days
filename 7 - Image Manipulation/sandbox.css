@@ -1,5 +1,43 @@
-/* ========================================
-
-    CODE YOUR STYLES BELOW!
-
-   ====================================== */
+  img, section{
+    max-width:100%;
+  }
+  
+  .grayscale:hover{
+    filter:grayscale(0%);
+    -webkit-filter:grayscale(0%);
+  }
+  .grayscale{
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+    transition: all 0.3s ease;
+  }
+  
+  .blur{
+    filter:blur(4px);
+    -webkit-filter(4px);
+    transition: all 0.3s ease;
+  }
+  .blur:hover{
+    filter:blur(0px);
+    -webkit-filter(0px);
+  }
+  
+  .invert{
+            filter:invert(100%);
+    -webkit-filter:invert(100%);
+    transition: all 0.3s ease;
+  }
+  .invert:hover{
+            filter:invert(0%);
+    -webkit-filter:invert(0%);
+  }
+  
+  .sepia{
+            filter:sepia(100%);
+    -webkit-filter:sepia(100%);
+    transition: all 0.3s ease;
+  }
+  .sepia:hover{
+            filter:sepia(0%);
+    -webkit-filter:sepia(0%);
+  }

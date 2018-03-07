@@ -1,5 +1,25 @@
-/* ========================================
-
-    CODE YOUR STYLES BELOW!
-
-   ====================================== */
+.image{
+    position:relative;
+    display: inline-block;
+    font-size:1rem;
+    text-align:center;
+    text-transform:uppercase;
+    margin-bottom: 50px;
+  }
+  
+  .image::after{
+    display:inherit;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-width:300px;
+    padding:18px 20px 18px 70px;
+    border:dashed 1px #888;
+    background-color:#f0f0f0;
+    background-image:url(https://s19.postimg.org/b54kn4d5f/image.png);
+    background-repeat:no-repeat;
+    background-position:15px 10px;
+    z-index:1;
+    content:"" attr(alt) " No fue encontrada";
+  }
