@@ -414,3 +414,20 @@ footer:hover .made-by, footer:hover .course, footer:hover .copyright {
     text-shadow: none;
   }
 /***************/
+
+/*******Esto es del día 9********/
+section header,
+section article,
+section nav,
+section aside,
+section footer,
+section .logo,
+section .articles {
+  background: rgba(140, 204, 231, 0.2);
+  border: solid 1px rgba(140, 204, 231, 0.3);
+  padding: 2%;
+  margin: 0 0 2%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+/*******Esto es del día 9********/
