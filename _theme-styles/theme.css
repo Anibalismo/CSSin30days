@@ -430,4 +430,15 @@ section .articles {
   font-size: 1rem;
   box-sizing: border-box;
 }
+
+code {
+  background: #fd6000;
+  color: white;
+  padding: 4px 6px;
+  font-family: 'Nova Mono', monospace;
+  font-size: 1rem;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px #5e2400;
+  display: inline-block;
+}
 /*******Esto es del día 9********/
