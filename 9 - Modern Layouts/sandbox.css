@@ -1,5 +1,116 @@
-/* ========================================
-
-    CODE YOUR STYLES BELOW!
-
-   ====================================== */
+.layout1 article{
+    width:58%;
+    float:left;
+  }
+  
+  .layout1 aside{
+    width:40%;
+    float:right;
+  }
+  
+  .layout1 footer{
+    clear:both;
+    width:100%;
+  }
+  
+  
+  /*LAYOUT2*/
+  .layout2 header .logo{
+    width:20%;
+    float:left;
+    margin:0;
+  }
+  
+  .layout2 header nav{
+    width:78%;
+    float:right;
+    margin:0;
+  }
+  
+  .layout2 header::after{
+    clear:both;
+    content:"";
+    display:table;
+  }
+  
+  .layout2 footer{
+    clear:both;
+    width:100%
+  }
+  
+  .layout2 aside.sidebar{
+    float:right;
+    width:23%
+  }
+  
+  .layout2 aside.sidenav{
+    float:left;
+    width:23%;
+  }
+  
+  .layout2 article
+  {
+    width:50%;
+    float:left;
+    margin-left:2%;
+  }
+  
+  /*LAYOUT3*/
+  .layout3 .logo{
+    width:20%;
+    float:right;
+    margin:0;
+  }
+  
+  .layout3 nav{
+    width:78%;
+    float:left;
+    margin:0;
+  }
+  
+  .layout3 header::after{
+    content:'';
+    display:table;
+    clear:both;
+  }
+  
+  .layout3 footer{
+    width:100%;
+  }
+  
+  .layout3 article {
+    float:left;
+    width:32%;
+    margin: 0 2% 0 0;
+  }
+  
+  .layout3 article:last-child{
+    margin:0;
+  }
+  
+  .layout3 .articles::after{
+    display:table;
+    content:'';
+    clear:both;
+  }
+  
+  @media screen and (max-width:860px){
+    .layout1 article,
+    .layout1 aside,
+    .layout2 header .logo,
+    .layout2 header nav,
+    .layout2 aside.sidenav,
+    .layout2 article,
+    .layout2 aside.sidebar,
+    .layout3 .logo,
+    .layout3 nav,
+    .layout3 footer,
+    .layout3 article{
+      width:100%;
+      margin:0 0 2%;
+      float:left;
+    }
+    section{
+      clear:both;
+    }
+  }
