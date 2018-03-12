@@ -1,4 +1,8 @@
-.layout1 article{
+footer{
+    clear:both;
+  }
+  
+  .layout1 article{
     width:58%;
     float:left;
   }
@@ -108,9 +112,10 @@
     .layout3 article{
       width:100%;
       margin:0 0 2%;
-      float:left;
     }
     section{
       clear:both;
     }
   }
+  
+  
